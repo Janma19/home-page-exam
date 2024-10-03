@@ -1,0 +1,82 @@
+/* CSS Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden; 
+}
+.hero-content {
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.video-container {
+    width: 80%; 
+    max-width: 1200px; 
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .video-container {
+        width: 90%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-container {
+        width: 100%; 
+    }
+
+    .hero {
+        height: auto; 
+    }
+}
+
+
+
+.footer {
+  background: linear-gradient( rgb(26, 23, 23) 0%, rgb(0, 0, 0) 100%); 
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0 !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
